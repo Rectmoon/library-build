@@ -1,0 +1,18 @@
+{
+  "name": "@zhulingying/hh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "unpkg": "umd/hh.js",
+  "module": "es/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build:commonjs": "cross-env BABEL_ENV=commonjs ../../node_modules/.bin/babel src --out-dir lib",
+    "build:es": "cross-env BABEL_ENV=es ../../node_modules/.bin/babel src --out-dir es"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

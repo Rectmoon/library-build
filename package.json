@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "rimraf packages/**/umd",
+    "build:umd": "npm run clean && webpack --config build/webpack.config.lib.js",
+    "build:es": "lerna run build:es",
+    "build:commonjs": "lerna run build:commonjs",
+    "build": "npm run build:umd && npm run build:es && npm run build:commonjs",
+    "example:dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "example:build": "webpack --config build/webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^7.0.3",
+    "glob": "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "lerna": "^3.16.4",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.6.0",
+    "react": "^16.9.0"
+  }
+}
