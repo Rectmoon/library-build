@@ -14,5 +14,9 @@ export default {
   run: async () => {
     await sleep(3)
     console.log('done')
+  },
+
+  sleep: () => {
+    console.log('sleep')
   }
 }
