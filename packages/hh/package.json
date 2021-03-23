@@ -1,6 +1,6 @@
 {
   "name": "@zhulingying/hh",
-  "version": "1.0.0",
+  "version": "1.0.1-tag.1",
   "description": "",
   "main": "lib/index.js",
   "unpkg": "umd/hh.js",
