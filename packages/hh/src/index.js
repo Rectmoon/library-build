@@ -9,6 +9,7 @@ export default {
 
   check: () => {
     console.log([1, 2, 3].includes(4))
+    console.log(this.a)
   },
 
   run: async () => {
