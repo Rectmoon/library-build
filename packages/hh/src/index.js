@@ -19,5 +19,7 @@ export default {
 
   sleep: () => {
     console.log('sleep')
-  }
+  },
+
+  swimming: () => {}
 }
