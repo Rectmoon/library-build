@@ -21,5 +21,7 @@ export default {
     console.log('sleep')
   },
 
-  swimming: () => {}
+  swimming: () => {
+    console.log('swiming')
+  }
 }
